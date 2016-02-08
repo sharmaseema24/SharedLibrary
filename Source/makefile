@@ -3,9 +3,10 @@ CC=g++
 INC_DIR=../include
 BIN_PATH=../bin
 LD_LIBRARY_PATH=../lib
-OBJ_PATH=$(Source)/obj
+OBJ_PATH=../src-obj
 SRC=$(wildcard *.cpp)
 OBJ=$(SRC:.cpp=.o)
+
 
 CFLAGS=-I$(INC_DIR)
 LDFLAGS=-L$(LD_LIBRARY_PATH)
@@ -15,7 +16,7 @@ LIBS=-lAddNum
 all: dir $(OBJ_PATH)/$(OBJ) $(BIN_PATH)/App.bin
 
 dir:
-	@sudo mkdir -p $(OBJ_PATH)
+	@mkdir -p $(OBJ_PATH)
 	@mkdir -p $(BIN_PATH)
 
 

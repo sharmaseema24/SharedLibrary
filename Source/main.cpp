@@ -8,6 +8,6 @@ int main()
 	
 	Add.setFirst(5);
 	Add.setSecond(20);
-	cout << "\nSum is:" << getSum() <<endl;
+	cout << "\nSum is:" << Add.getSum() <<endl;
 	return 0;
 }
