@@ -1,14 +1,14 @@
 #include "AddNum.h"
 #include <iostream>
 
-use namespace std;
+using namespace std;
 
 AddNum::AddNum()
 {
 	cout << "\n AddNum constructor"<<endl;
 }
 
-AddNum::setFirst(int var)
+void AddNum::setFirst(int var)
 {
   first = var;
 }
